@@ -5,7 +5,7 @@
  * @str: string to be printed
  * Return: Allow success
 */
-void _putstring(char *str, int *k)
+void _putstring(const char *str, int *k)
 {
 	if (str == NULL)
 	{
