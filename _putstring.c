@@ -7,8 +7,6 @@
 */
 void _putstring(char *str, int *k)
 {
-	int len_str = 0;
-
 	if (str == NULL)
 	{
 		_putchar('N', k);
