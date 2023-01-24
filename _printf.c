@@ -18,9 +18,7 @@ int _printf(const char *format, ...)
 	for (i = 0; *(format + i) != '\0'; i++)
 	{
 		if (*(format + i) != '%')
-		{
 			_putchar(*(format + i), &j);
-		}
 		else if (*(format + i) == '%')
 			i++;
 		switch (*(format + i))
@@ -36,6 +34,7 @@ int _printf(const char *format, ...)
 				break;
 			case 'i':
 				_putnum(va_arg(input, int), &j);
+				break;
 			default:
 				break;
 		}
