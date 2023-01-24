@@ -19,9 +19,9 @@ int _printf(const char *format, ...)
 	{
 		if (*(format + i) != '%')
 		{
-			_putchar(*(format + i++), &j);
-
+			_putchar(*(format + i), &j);
 		}
+		else if (*(format + i) == '%')
 			i++;
 		switch (*(format + i))
 		{
