@@ -6,6 +6,6 @@ int main(void)
 	char b = 'j';
 	int a = 1256;
 
-	_printf("%i\n", a);
-	return (0);
+	_printf("%s\n", tr);
+	eturn (0);
 }
