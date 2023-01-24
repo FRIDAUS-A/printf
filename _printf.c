@@ -3,7 +3,7 @@
 #include <stddef.h>
 
 /**
- * _print - produces output according to format
+ * _printf - produces output according to format
  * @format: format specifications
  * Return: Allow success
 */
