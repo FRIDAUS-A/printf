@@ -43,5 +43,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(input);
-	return (j - 1);
+	return (j);
 }
