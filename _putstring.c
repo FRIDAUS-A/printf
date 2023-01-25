@@ -8,13 +8,9 @@
 */
 void _putstring(const char *str, int *k)
 {
-	if (str == NULL)
+	if (str != NULL)
 	{
-		_putchar('N', k);
-		_putchar('U', k);
-		_putchar('L', k);
-		_putchar('L', k);
+		while (*str)
+			_putchar(*str++, k);
 	}
-	while (*str)
-		_putchar(*str++, k);
 }
