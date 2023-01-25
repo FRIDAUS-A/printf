@@ -26,13 +26,10 @@ int _printf(const char *format, ...)
 			{
 				case 'c':
 					_putchar(va_arg(input, int), &j);
-					break;
 				case 's':
 					_putstring(va_arg(input, char *), &j);
-					break;
 				case '%':
 					_putchar(va_arg(input, int), &j);
-					break;
 				case 'i':
 					_putnum(va_arg(input, int), &j);
 					break;
