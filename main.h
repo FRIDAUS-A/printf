@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdarg.h>
+#include <unistd.h>
 
 int _putchar(char c, int *k);
 void _putstring(const char *str, int *k);
