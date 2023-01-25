@@ -3,8 +3,8 @@
 
 int main(void)
 {
-	_printf("Let's print a simple sentence.\n");
-	printf("Let's print a simple sentence.\n");
+	_printf("A char inside a sentence: %c. Did it work?\n", 'F');
+	printf("A char inside a sentence: %c. Did it work?\n", 'F');
 
 	return (0);
 }

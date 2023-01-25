@@ -20,9 +20,8 @@ int _printf(const char *format, ...)
 		if (*(format + i) != '%')
 			_putchar(*(format + i), &j);
 		else if (*(format + i) == '%')
-			i++;
-		else
 		{
+			i++;
 			switch (*(format + i))
 			{
 				case 'c':
