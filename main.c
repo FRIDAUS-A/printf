@@ -3,7 +3,8 @@
 
 int main(void)
 {
-	printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
-	printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
+	_printf("Let's print a simple sentence.\n");
+	printf("Let's print a simple sentence.\n");
+
 	return (0);
 }
