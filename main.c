@@ -1,11 +1,9 @@
 #include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
-	char *str = "my name is soft";
-	char b = 'j';
-	int a = 1256;
-
-	_printf("%syou are great\n", str);
+	printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
+	printf("Complete the sentence: You %s nothing, Jon Snow.\n", "know");
 	return (0);
 }

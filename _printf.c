@@ -21,22 +21,25 @@ int _printf(const char *format, ...)
 			_putchar(*(format + i), &j);
 		else if (*(format + i) == '%')
 			i++;
-		switch (*(format + i))
+		else
 		{
-			case 'c':
-				_putchar(va_arg(input, int), &j);
-				break;
-			case 's':
-				_putstring(va_arg(input, char *), &j);
-				break;
-			case '%':
-				_putchar(va_arg(input, int), &j);
-				break;
-			case 'i':
-				_putnum(va_arg(input, int), &j);
-				break;
-			default:
-				break;
+			switch (*(format + i))
+			{
+				case 'c':
+					_putchar(va_arg(input, int), &j);
+					break;
+				case 's':
+					_putstring(va_arg(input, char *), &j);
+					break;
+				case '%':
+					_putchar(va_arg(input, int), &j);
+					break;
+				case 'i':
+					_putnum(va_arg(input, int), &j);
+					break;
+				default:
+					break;
+			}
 		}
 	}
 	va_end(input);
