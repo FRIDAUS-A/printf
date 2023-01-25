@@ -4,8 +4,8 @@
 int main(void)
 {
 	int d, p;
-	d = _printf("A char inside a sentence: %c. Did it work?\n", 'F');
-	p = printf("A char inside a sentence: %c. Did it work?\n", 'F');
+	d = _printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+	p = printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
 	printf("%d\n%d\n%%", d, p);
 	printf("NULL");
 	return (0);
